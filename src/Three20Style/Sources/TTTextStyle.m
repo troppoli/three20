@@ -241,7 +241,7 @@
     }
 
     CGSize offset = CGSizeMake(_shadowOffset.width, shadowYOffset);
-    CGContextSetShadowWithColor(ctx, offset, 0, _shadowColor.CGColor);
+    CGContextSetShadowWithColor(ctx, offset, 1, _shadowColor.CGColor);
   }
 
   if (_color) {
