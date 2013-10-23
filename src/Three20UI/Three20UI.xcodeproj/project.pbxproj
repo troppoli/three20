@@ -188,7 +188,6 @@
 		6E6456A21184D4DA00F08CB1 /* TTModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E64561A1184D4DA00F08CB1 /* TTModelViewController.m */; };
 		6E6456A51184D4DA00F08CB1 /* TTPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E64561D1184D4DA00F08CB1 /* TTPageControl.m */; };
 		6E6456A61184D4DA00F08CB1 /* TTPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E64561E1184D4DA00F08CB1 /* TTPhotoView.m */; };
-		6E6456A71184D4DA00F08CB1 /* TTPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E64561F1184D4DA00F08CB1 /* TTPhotoViewController.m */; };
 		6E6456A81184D4DA00F08CB1 /* TTPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456201184D4DA00F08CB1 /* TTPickerTextField.m */; };
 		6E6456A91184D4DA00F08CB1 /* TTPickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456211184D4DA00F08CB1 /* TTPickerViewCell.m */; };
 		6E6456AA1184D4DA00F08CB1 /* TTPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456221184D4DA00F08CB1 /* TTPopupViewController.m */; };
@@ -258,9 +257,6 @@
 		6E6456EC1184D4DA00F08CB1 /* TTTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456641184D4DA00F08CB1 /* TTTextEditor.m */; };
 		6E6456ED1184D4DA00F08CB1 /* TTTextEditorInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456651184D4DA00F08CB1 /* TTTextEditorInternal.m */; };
 		6E6456EE1184D4DA00F08CB1 /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456661184D4DA00F08CB1 /* TTTextView.m */; };
-		6E6456EF1184D4DA00F08CB1 /* TTThumbsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456671184D4DA00F08CB1 /* TTThumbsDataSource.m */; };
-		6E6456F01184D4DA00F08CB1 /* TTThumbsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456681184D4DA00F08CB1 /* TTThumbsTableViewCell.m */; };
-		6E6456F11184D4DA00F08CB1 /* TTThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456691184D4DA00F08CB1 /* TTThumbsViewController.m */; };
 		6E6456F21184D4DA00F08CB1 /* TTThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E64566A1184D4DA00F08CB1 /* TTThumbView.m */; };
 		6E6456F31184D4DA00F08CB1 /* TTUnclippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E64566B1184D4DA00F08CB1 /* TTUnclippedView.m */; };
 		6E6457001184D4DA00F08CB1 /* TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456781184D4DA00F08CB1 /* TTView.m */; };
@@ -2157,7 +2153,6 @@
 				6E6456A21184D4DA00F08CB1 /* TTModelViewController.m in Sources */,
 				6E6456A51184D4DA00F08CB1 /* TTPageControl.m in Sources */,
 				6E6456A61184D4DA00F08CB1 /* TTPhotoView.m in Sources */,
-				6E6456A71184D4DA00F08CB1 /* TTPhotoViewController.m in Sources */,
 				6E6456A81184D4DA00F08CB1 /* TTPickerTextField.m in Sources */,
 				6E6456A91184D4DA00F08CB1 /* TTPickerViewCell.m in Sources */,
 				6E6456AA1184D4DA00F08CB1 /* TTPopupViewController.m in Sources */,
@@ -2227,9 +2222,6 @@
 				6E6456EC1184D4DA00F08CB1 /* TTTextEditor.m in Sources */,
 				6E6456ED1184D4DA00F08CB1 /* TTTextEditorInternal.m in Sources */,
 				6E6456EE1184D4DA00F08CB1 /* TTTextView.m in Sources */,
-				6E6456EF1184D4DA00F08CB1 /* TTThumbsDataSource.m in Sources */,
-				6E6456F01184D4DA00F08CB1 /* TTThumbsTableViewCell.m in Sources */,
-				6E6456F11184D4DA00F08CB1 /* TTThumbsViewController.m in Sources */,
 				6E6456F21184D4DA00F08CB1 /* TTThumbView.m in Sources */,
 				6E6456F31184D4DA00F08CB1 /* TTUnclippedView.m in Sources */,
 				6E6457001184D4DA00F08CB1 /* TTView.m in Sources */,
