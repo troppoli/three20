@@ -47,4 +47,6 @@
                     contentMode:(UIViewContentMode)contentMode
                            size:(CGSize)size next:(TTStyle*)next;
 
+// promoting this to public allows subs to have their own interesting draw routines.
+- (UIImage*)imageForContext:(TTStyleContext*)context;
 @end
