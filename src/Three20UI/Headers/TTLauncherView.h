@@ -134,4 +134,6 @@
  */
 - (void)endHighlightItem:(TTLauncherItem*)item;
 
+// make this public, need to work around tons of trouble... really should just stop using it.
+- (void)recreateButtons;
 @end
