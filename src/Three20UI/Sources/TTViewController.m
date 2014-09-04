@@ -85,6 +85,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)loadView {
+#if 0
   if (nil != self.nibName) {
     [super loadView];
 
@@ -95,6 +96,12 @@
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.view.backgroundColor = TTSTYLEVAR(backgroundColor);
   }
+#else
+    [super loadView];
+    self.view.autoresizesSubviews = YES;
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.view.backgroundColor = TTSTYLEVAR(backgroundColor);
+#endif
 }
 
 

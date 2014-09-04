@@ -171,8 +171,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)loadView {
   [super loadView];
-
-  _webView = [[UIWebView alloc] initWithFrame:TTToolbarNavigationFrame()];
+  _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+//	_webView = [[UIWebView alloc] initWithFrame:TTToolbarNavigationFrame()];
   _webView.delegate = self;
   _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth
   | UIViewAutoresizingFlexibleHeight;
