@@ -251,7 +251,7 @@ __attribute__((weak_import));
 
     } else {
       [self.window setRootViewController:_rootViewController];
-      [self.window addSubview:_rootViewController.view];
+//      [self.window addSubview:_rootViewController.view];
     }
   }
 }

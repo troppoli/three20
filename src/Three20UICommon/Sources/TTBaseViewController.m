@@ -194,6 +194,16 @@
   }
 }
 
+-(BOOL)shouldAutorotate
+{
+	UIViewController* popup = [self popupViewController];
+	if (popup) {
+		return [popup shouldAutorotate];
+		
+	} else {
+		return [super shouldAutorotate];
+	}
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -211,6 +221,17 @@
   }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+-(NSUInteger)supportedInterfaceOrientations
+{
+	UIViewController* popup = [self popupViewController];
+	if (popup) {
+		return [popup supportedInterfaceOrientations];
+
+	} else {
+		return [super supportedInterfaceOrientations];
+	}
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
