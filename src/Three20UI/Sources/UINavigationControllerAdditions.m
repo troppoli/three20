@@ -142,13 +142,28 @@ TT_FIX_CATEGORY_BUG(UINavigationControllerAdditions)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 -(BOOL)shouldAutorotate {
+	if (self.viewControllers.count == 0) {
+		return [super shouldAutorotate];
+	}
 	return [[self.viewControllers lastObject] shouldAutorotate];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+	if (self.viewControllers.count == 0) {
+		return [super preferredInterfaceOrientationForPresentation];
+	}
 	return [[self.viewControllers lastObject] preferredInterfaceOrientationForPresentation];
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+-(NSUInteger)supportedInterfaceOrientations{
+	if (self.viewControllers.count == 0) {
+		return [super supportedInterfaceOrientations];
+	}
+	return [[self.viewControllers lastObject] supportedInterfaceOrientations];
+}
+
 
 
 @end
