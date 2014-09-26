@@ -74,6 +74,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)layoutSubviews {
+  [super layoutSubviews];
   _label.size = [_label sizeThatFits:CGSizeMake(self.bounds.size.width - 12,
                                                 self.bounds.size.height)];
   _label.origin = CGPointMake(12, floorf((self.bounds.size.height - _label.size.height)/2.f));

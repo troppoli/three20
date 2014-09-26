@@ -191,6 +191,7 @@ static const NSInteger kMaxBadgeNumber = 99;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)layoutSubviews {
+  [super layoutSubviews];
   if (_badge || _closeButton) {
     CGRect imageRect = [self rectForImage];
     if (_badge) {

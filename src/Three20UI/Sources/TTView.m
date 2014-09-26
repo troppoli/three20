@@ -82,6 +82,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)layoutSubviews {
+  [super layoutSubviews];
   TTLayout* layout = self.layout;
   if (nil != layout) {
     [layout layoutSubviews:self.subviews forView:self];

@@ -79,6 +79,7 @@ static CGFloat kButtonMaxWidth  = 120.0f;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)layoutSubviews {
+  [super layoutSubviews];
   CGFloat buttonWidth = floor((self.width-kPadding) / _buttons.count)-kPadding;
   if (buttonWidth > kButtonMaxWidth) {
     buttonWidth = kButtonMaxWidth;

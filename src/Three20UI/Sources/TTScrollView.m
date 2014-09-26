@@ -1600,6 +1600,7 @@ static const CGFloat kFrameDuration = 1.0/40.0f;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)layoutSubviews {
+  [super layoutSubviews];
   [self layoutPage];
   [self layoutAdjacentPages];
 
