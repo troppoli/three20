@@ -264,8 +264,16 @@
   } else {
     CGRect titleRect = [self rectForText:text forSize:rect.size withFont:font];
     titleRect = CGRectOffset(titleRect, rect.origin.x, rect.origin.y);
-    rect.size = [text drawInRect:titleRect withFont:font lineBreakMode:_lineBreakMode
+#if 0
+	  rect.size = [text drawInRect:titleRect withFont:font lineBreakMode:_lineBreakMode
                        alignment:_textAlignment];
+#else
+	  NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
+	  paragraphStyle.lineBreakMode = _lineBreakMode;
+	  paragraphStyle.alignment = _textAlignment;
+	  [text drawInRect:titleRect withAttributes: @{NSFontAttributeName: font,
+															 NSParagraphStyleAttributeName: paragraphStyle }];
+#endif
     context.contentFrame = rect;
   }
 
