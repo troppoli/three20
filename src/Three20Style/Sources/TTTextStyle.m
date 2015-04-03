@@ -272,7 +272,8 @@
 	  paragraphStyle.lineBreakMode = _lineBreakMode;
 	  paragraphStyle.alignment = _textAlignment;
 	  [text drawInRect:titleRect withAttributes: @{NSFontAttributeName: font,
-															 NSParagraphStyleAttributeName: paragraphStyle }];
+												   NSForegroundColorAttributeName:(_color ? _color : [UIColor blackColor]),
+												   NSParagraphStyleAttributeName: paragraphStyle }];
 #endif
     context.contentFrame = rect;
   }
