@@ -222,7 +222,7 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
--(NSUInteger)supportedInterfaceOrientations
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
 	UIViewController* popup = [self popupViewController];
 	if (popup) {

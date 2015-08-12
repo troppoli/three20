@@ -506,6 +506,8 @@ static NSMutableDictionary* gNamedCaches = nil;
     } else if (TTIsCachesURL(URL)) {
       image = [self loadImageFromCaches:URL];
       [self storeImage:image forURL:URL];
+    } else if ([URL hasPrefix:@"assetcatalog://"]) {
+		image = [UIImage imageNamed:[URL substringFromIndex:15]];
     }
   }
 
