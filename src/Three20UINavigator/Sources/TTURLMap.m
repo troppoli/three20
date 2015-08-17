@@ -505,9 +505,9 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)isAppURL:(NSURL*)URL {
   return [self isExternalURL:URL]
-          || ([[UIApplication sharedApplication] canOpenURL:URL]
-              && ![self isSchemeSupported:URL.scheme]
-              && ![self isWebURL:URL]);
+          || (![self isSchemeSupported:URL.scheme]
+              && ![self isWebURL:URL]
+			  && [[UIApplication sharedApplication] canOpenURL:URL]);
 }
 
 
