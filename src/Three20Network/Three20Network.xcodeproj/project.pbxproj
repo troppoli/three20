@@ -416,7 +416,7 @@
 			name = Three20NetworkUnitTests;
 			productName = CoreUnitTests;
 			productReference = EB9E6C6210B6A8F800DE563C /* NetworkUnitTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -564,7 +564,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6E92493F112C6F4000531F03 /* Internal */ = {
+		AABC2A5E1C2455630030EC5A /* App Store */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E64541F1184BDF900F08CB1 /* Project.xcconfig */;
 			buildSettings = {
@@ -573,33 +573,64 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 			};
-			name = Internal;
+			name = "App Store";
 		};
-		6E924940112C6F4000531F03 /* Internal */ = {
+		AABC2A5F1C2455630030EC5A /* App Store */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EE7364B11849B3D00A35176 /* Library.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				RUN_CLANG_STATIC_ANALYZER = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ZERO_LINK = NO;
 			};
-			name = Internal;
+			name = "App Store";
 		};
-		6E924941112C6F4000531F03 /* Internal */ = {
+		AABC2A601C2455630030EC5A /* App Store */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EE7364C11849B3D00A35176 /* UnitTests.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
 			};
-			name = Internal;
+			name = "App Store";
+		};
+		AABC2A611C24556A0030EC5A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E64541F1184BDF900F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+			};
+			name = Distribution;
+		};
+		AABC2A621C24556A0030EC5A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE7364B11849B3D00A35176 /* Library.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ZERO_LINK = NO;
+			};
+			name = Distribution;
+		};
+		AABC2A631C24556A0030EC5A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE7364C11849B3D00A35176 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Distribution;
 		};
 		BEF31F3B0F352DF6000DE5D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -678,8 +709,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEF31F3B0F352DF6000DE5D2 /* Debug */,
-				6E924940112C6F4000531F03 /* Internal */,
 				BEF31F3C0F352DF6000DE5D2 /* Release */,
+				AABC2A621C24556A0030EC5A /* Distribution */,
+				AABC2A5F1C2455630030EC5A /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -688,8 +720,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
-				6E92493F112C6F4000531F03 /* Internal */,
 				C01FCF5008A954540054247B /* Release */,
+				AABC2A611C24556A0030EC5A /* Distribution */,
+				AABC2A5E1C2455630030EC5A /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -698,8 +731,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB9E6C6510B6A8F900DE563C /* Debug */,
-				6E924941112C6F4000531F03 /* Internal */,
 				EB9E6C6610B6A8F900DE563C /* Release */,
+				AABC2A631C24556A0030EC5A /* Distribution */,
+				AABC2A601C2455630030EC5A /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
