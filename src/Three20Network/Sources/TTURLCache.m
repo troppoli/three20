@@ -508,7 +508,16 @@ static NSMutableDictionary* gNamedCaches = nil;
       [self storeImage:image forURL:URL];
     } else if ([URL hasPrefix:@"assetcatalog://"]) {
 		image = [UIImage imageNamed:[URL substringFromIndex:15]];
-    }
+	} else {
+		// hi, this is how we bridge off the three20 paths to framework bundles
+		NSArray* parts = [URL componentsSeparatedByString:@"://"];
+		if (parts.count == 2) {
+			NSBundle* bundle = [NSBundle bundleWithIdentifier:parts.firstObject];
+			if (bundle) {
+				image = [UIImage imageNamed:parts.lastObject inBundle:bundle compatibleWithTraitCollection:nil];
+			}
+		}
+	}
   }
 
   return image;
