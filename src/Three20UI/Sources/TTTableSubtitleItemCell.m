@@ -78,14 +78,18 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (CGFloat)tableView:(UITableView*)tableView rowHeightForObject:(id)object {
-  TTTableSubtitleItem* item = object;
-
-  CGFloat height = TTSTYLEVAR(tableFont).ttLineHeight + kTableCellVPadding*2;
-  if (item.subtitle) {
-    height += TTSTYLEVAR(font).ttLineHeight;
-  }
-
-  return height;
+	TTTableSubtitleItem* item = object;
+	
+	CGFloat height = TTSTYLEVAR(tableFont).ttLineHeight + kTableCellVPadding*2;
+	if (item.subtitle) {
+		//height += TTSTYLEVAR(font).ttLineHeight;
+		if ([[TTDefaultStyleSheet globalStyleSheet] isKindOfClass:[TTDefaultStyleSheet class]]) {
+			TTDefaultStyleSheet* dss = (TTDefaultStyleSheet*) [TTDefaultStyleSheet globalStyleSheet];
+			height += dss.font.ttLineHeight;
+		}
+	}
+	
+	return height;
 }
 
 
